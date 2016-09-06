@@ -52,10 +52,3 @@ var clickTag = "https://www.geico.com/";
     function clickHandler(event) {
         window.open(window.clickTag);
     }
-
-$('.NoFilter').addClass('animated slideInLeft');
-$('.NoRegrets').addClass('animated slideInLeft');
-$('.SaveMoney').addClass('animated slideInLeft');
-$('.gecko').addClass('animated slideInLeft');
-$('.logo').addClass('animated slideInLeft');
-$('.btn').addClass('animated slideInLeft');
