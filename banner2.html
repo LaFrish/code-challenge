@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>
+  	<meta name="ad.size" content="width=300,height=250">
+    <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css" media="all" rel="stylesheet" type="text/css">
+  </head>
+  <style>
+  $transDur: 0.5s;
+
+  *{margin:0;
+    padding:0;
+    box-sizing: border-box;
+  }
+
+  body{
+    font-family: 'Lato';
+  }
+
+  #wrapper{
+    background: #b5bd04;
+    width: 300px;
+    height: 250px;
+    border: 1px solid #323330;
+  }
+
+  h1{
+    font-size:23.5px;
+    color: #fff;
+  }
+
+  .gecko{
+    position:absolute;
+    left:0px;
+    right: 25px;
+    top: 10px;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-delay: 2s;
+  }
+
+  .logo {
+  	position: absolute;
+    top: 140px;
+    padding-left: 17px;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-delay: 2.5s;
+  }
+
+  .NoFilter{
+    padding-left: 10px;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-delay: .50s;
+  }
+
+  .NoRegrets{
+    padding-left: 10px;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-delay: 1s;
+  }
+
+  .SaveMoney{
+    padding-left: 10px;
+    font-size:23.5px;
+    color: #00205c;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-delay: 1.5s;
+  }
+
+  .btn {
+    font-family: 'Lato';
+    text-align: center;
+    background: #fff;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    width: 124px;
+    height: 25px;
+    color: #000;
+    margin-left: 20px;
+    line-height: 25px;
+    font-size:15px;
+    top:190px;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-delay: 3s;
+  }
+
+  .animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+
+  .animated.infinite {
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes slideInLeft {
+    from {
+      -webkit-transform: translate3d(-100%, 0, 0);
+      -moz-transform: translate3d(-100%, 0, 0);
+      -ms-transform: translate3d(-100%, 0, 0);
+      -o-transform: translate3d(-100%, 0, 0);
+      transform: translate3d(-100%, 0, 0);
+      visibility: visible;
+    }
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+      -moz-transform: translate3d(0, 0, 0);
+      -ms-transform: translate3d(0, 0, 0);
+      -o-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  .slideInLeft {
+    -webkit-animation-name: slideInLeft;
+    animation-name: slideInLeft;
+  }
+  </style>
+  <body>
+    <div id="wrapper">
+      <div class="container">
+        <h1 class="NoFilter animated slideInLeft">#NoFilter</h1>
+        <h1 class="NoRegrets animated slideInLeft">#NoRegrets</h1>
+        <h2 class="SaveMoney animated slideInLeft">#SaveMoney</h2>
+        <img class="logo animated slideInLeft" src="images/GEICO.png"/></br>
+        <div class="btn animated slideInLeft" href="#">Click to Quote</div>
+        <img class="gecko animated slideInLeft" src="images/300x250.png"/>
+      </div>
+    </div>
+  <script>
+
+    var clickTag = "https://www.geico.com/";
+     document.getElementById('wrapper').addEventListener('click', clickHandler, false);
+        function clickHandler(event) {
+            window.open(window.clickTag);
+        }
+
+    $('.NoRegrets').addClass('animated slideInLeft');
+    $('.NoFilter').addClass('animated slideInLeft');
+    $('.SaveMoney').addClass('animated slideInLeft');
+    $('.gecko').addClass('animated slideInLeft');
+    $('.logo').addClass('animated slideInLeft');
+    $('.btn').addClass('animated slideInLeft');
+
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+  <script type="text/javascript" src= "https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script type="text/javascript" src= "https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+  </body>
+</html>
